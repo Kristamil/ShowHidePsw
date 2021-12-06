@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show & Hide Password</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />        <style>
+            body
+            {
+                background-image: url("background.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .container
+            {
+                margin-left: 30%;
+                margin-top: 3%;
+                height:75vh;
+                width:25vw;
+                border:3px solid gray;
+                box-shadow: 5px 10px 5px 5px black;
+            }
+             #inp
+            {
+                width:300px;
+                height:30px;
+                margin:10px;
+                margin-left: 10px; 
+                font-family: fantasy;
+                padding-left: 15px;
+                font-size: 14px;
+            }
+            h1
+            {
+                text-align: center;
+                color: whitesmoke;
+                font-weight: bold;
+                font-family: fantasy;
+
+
+            }
+            #check
+            {
+                margin-left: 20px;
+            }
+            a
+            {
+                margin:20px;
+                text-decoration: none;
+                font-weight: bold;
+                font-size:16px;
+                font-family: fantasy;
+                color:cyan;
+
+            }
+            a:hover
+            {
+                color:chartreuse;
+
+            }
+            button
+            {
+                margin-top: 20px;
+                height:40px;
+                width:300px;
+                margin-left: 20px;
+                color:white;
+                background-color: rgb(42, 157, 252);
+                font-weight: bold;
+                font-size: larger;
+                font-family: fantasy;
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px 5px white;
+
+            }
+
+            button:hover
+            {
+                color:gray;
+                background-color: blue;
+            }
+            #inpt
+            {
+                width:300px;
+                height:30px;
+                margin:10px;
+                margin-left: 10px; 
+                font-family: fantasy;
+                padding-left: 15px;
+                font-size: 14px;
+            }
+            #psw
+            {
+                color:whitesmoke;
+                font-weight: bold;
+                font-family: fantasy;
+                font-size: 14px;
+            }
+            #fb
+            {
+                background-color: rgb(85, 85, 214);
+                width:10vw;
+                box-shadow: none;
+            }
+            #insta
+            {
+                background-color: orangered;
+                width:10vw;
+                box-shadow: none;
+            }
+            h3
+            {
+                color:white;
+                text-align: center;
+                font-size: 14px;
+                font-family: fantasy;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login Form</h1><hr>
+            <form>
+                
+                <input id="inpt"type="email" placeholder="Email or Phone" /><br>
+                <input id="inp"type="password"placeholder="Password"/><br>
+                <input id="check" type="checkbox" onclick="myFunction()"><span id="psw"> Show Password </span>
+                <a href="#">Forgot Password?</a><br>
+                <button>LOGIN</button>
+                <h3>Or Login With</h3>
+                <button id="fb">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+ 
+                    Facebook</button>
+                <button id="insta">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+
+                    Instagram</button>
+                    <h3>Don't have an account?<a href="#" >SignUp Now</a></h3>
+
+
+
+
+        </div>
+        <script src="psw.js"></script>
+    </body>
+</html>
